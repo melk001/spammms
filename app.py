@@ -27,7 +27,7 @@ def encrypt_message(key, iv, plaintext):
 
 # دالة جلب التوكينات
 def fetch_tokens():
-    token_url = "http://127.0.0.1:5001/token"
+    token_url = "https://sktokenss.vercel.app/token"
     try:
         response = requests.get(token_url)
         if response.status_code == 200:
